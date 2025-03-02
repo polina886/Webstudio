@@ -10,7 +10,12 @@
 
 }
 .top {
-    background: var(--white);
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+background: var(--white);
 }
 header a {
     color: var(--text);
@@ -20,10 +25,23 @@ header a {
 }
 .header h1 { 
     color: var(--white);
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 900;
+font-size: 44px;
+line-height: 60px;
+text-align: center;
+text-transform: uppercase;
 }
 button {
-    background-color: var(--blue);
-    color: var(--white);
+background-color: var(--blue);
+color: var(--white);
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 30px;
+text-align: center;
 }
 body {
     background: var(--white);
@@ -33,7 +51,50 @@ body {
 li {
     list-style: none;
 }
-footer {
+footer p{
     background: var(--gray);
     color: var(--white);
+}
+p {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+}
+.webstudio {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    background: var(--white);
+    color: var(--blue);
+}
+section h2 {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 42px;
+text-align: center;
+color: var(--text);
+}
+.person {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+color:var(--text);
+}
+section h3 {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+text-transform: uppercase;
+color: var(--text);
 }
