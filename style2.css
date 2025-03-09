@@ -1,9 +1,67 @@
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --gray: #2F303A;
+    --brown: #757575;
+    --essence: #ECECEC;
+    --beige: #F5F4FA;
+    --blue: #2196F3;
+    --text: #212121;
+    --gold: #EEEEEE;
+}
+
 body {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    font-style: normal;
+    font-family: 'Roboto', sans-serif;
 }
+
+.header-logo, .footer-logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--blue);
+}
+
+.portfolio-banner-heading {
+    display: none;
+}
+
+.header-nav-item {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--text);
+}
+
+.portfolio-banner-button {
+    align-items: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    color: var(--text);
+}
+
+.portfolio-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-banner-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    color: var(--brown);
+}
+
+footer {
+    background: var(--gray);
+}
+
 ul {
     display: grid;
     grid-template-columns: repeat(3, auto);
@@ -11,6 +69,7 @@ ul {
     padding: 0;
     justify-content: center;
 }
+
 li {
     list-style: none;
 }
