@@ -63,6 +63,9 @@ body {
 li {
     list-style: none;
 }
+section {
+    padding: 60px 0;
+}
 
 .footer-info {
     background: var(--gray);
@@ -107,4 +110,8 @@ li {
     line-height: 16px;
     text-transform: uppercase;
     color: var(--text);
+}
+.container {
+    width: 1600px;
+    margin: 0 auto;
 }
