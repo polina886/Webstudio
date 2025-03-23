@@ -12,10 +12,12 @@
 body {
     background: var(--white);
     color: var(--text);
+    display: flex;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     text-align: center;
     margin: 0;
+    padding: 0;
 }
 
 .container {

@@ -11,10 +11,30 @@
 }
 
 body {
+    background: var(--white);
     display: flex;
     flex-direction: column;
     font-style: normal;
     font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.container {
+    width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
 }
 
 .header-logo, .footer-logo {
@@ -29,6 +49,15 @@ body {
     display: none;
 }
 
+.header-nav-list {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
 .header-nav-item {
     font-weight: 500;
     font-size: 14px;
@@ -36,19 +65,51 @@ body {
     color: var(--text);
 }
 
-.portfolio-banner-button {
+.portfolio-banner {
+    display: flex;
+    justify-content: center;
     align-items: center;
+    gap: 10px;
+}
+
+.portfolio-banner-button {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
     text-align: center;
     color: var(--text);
+    padding: 10px 20px;
+    cursor: pointer;
 }
 
-.portfolio-banner {
+.portfolio-banner-list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 20px;
+    padding: 0;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.portfolio-banner-item {
+    flex: 1 1 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+    display: flex;
+    flex-direction: column;
     align-items: center;
+}
+
+.portfolio-banner-img {
+    width: 100%;
+    height: auto;
+}
+
+.portfolio-banner-title {
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    color: var(--text);
 }
 
 .portfolio-banner-text {
@@ -56,27 +117,15 @@ body {
     font-size: 16px;
     line-height: 1.88;
     color: var(--brown);
+    text-align: center;
 }
 
-footer {
+.footer {
     background: var(--gray);
-}
-
-ul {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    gap: 20px;
-    padding: 0;
-    justify-content: center;
-}
-
-li {
-    list-style: none;
-}
-section {
-    padding: 60px 0;
-}
-.container {
-    width: 1600px;
-    margin: 0 auto;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
 }
