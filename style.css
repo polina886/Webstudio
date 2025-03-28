@@ -18,10 +18,11 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
+    flex-direction: column;
 }
 
 .container {
-    width: 1600px;
+    width: 1200px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -34,6 +35,13 @@ body {
     align-items: center;
     width: 100%;
     padding: 20px;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
 }
 
 .header-logo {
@@ -83,6 +91,10 @@ body {
     cursor: pointer;
 }
 
+.main {
+    flex-grow: 1;
+}
+
 .features-list,
 .activities-list,
 .team-list {
@@ -102,14 +114,29 @@ body {
     align-items: center;
 }
 
+.team-name {
+    color: var(--text);
+    text-decoration: none;
+}
+
+.team-role {
+color: var(--brown);
+}
+
 .footer {
     background: var(--gray);
     color: var(--white);
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     padding: 20px;
     width: 100%;
+}
+
+.footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .footer-logo {
