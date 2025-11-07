@@ -12,110 +12,105 @@
 
 body {
     background: var(--white);
-    display: flex;
-    flex-direction: column;
-    font-style: normal;
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    align-items: center;
 }
 
 .container {
-    width: 1600px;
+    width: 90%;
+    max-width: 1600px;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    padding: 20px;
+    padding: 20px 0;
 }
 
 .header-logo, .footer-logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
-    line-height: 1.19;
     color: var(--blue);
-}
-
-.portfolio-banner-heading {
-    display: none;
 }
 
 .header-nav-list {
     display: flex;
     gap: 20px;
-    align-items: center;
     list-style: none;
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
-.header-nav-item {
+.header-nav-item a {
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.14;
     color: var(--text);
+    text-decoration: none;
 }
 
 .portfolio-banner {
     display: flex;
     justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
     gap: 10px;
+    margin: 30px 0;
 }
 
 .portfolio-banner-button {
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.63;
-    text-align: center;
-    color: var(--text);
     padding: 10px 20px;
     cursor: pointer;
+    border: none;
+    background: var(--essence);
+    color: var(--text);
+    border-radius: 4px;
 }
 
 .portfolio-banner-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
     padding: 0;
-    width: 100%;
-    max-width: 1200px;
+    margin: 0;
+    list-style: none;
 }
 
 .portfolio-banner-item {
-    flex: 1 1 calc(33.333% - 20px);
-    max-width: calc(33.333% - 20px);
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: var(--beige);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.portfolio-banner-item:hover {
+    transform: translateY(-5px);
 }
 
 .portfolio-banner-img {
     width: 100%;
     height: auto;
+    border-radius: 6px;
+    margin-bottom: 10px;
 }
 
 .portfolio-banner-title {
     font-weight: 700;
     font-size: 18px;
     text-align: center;
+    margin: 5px 0;
     color: var(--text);
 }
 
 .portfolio-banner-text {
     font-weight: 400;
     font-size: 16px;
-    line-height: 1.88;
     color: var(--brown);
     text-align: center;
 }
@@ -126,6 +121,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-    width: 100%;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+.footer-text,
+.footer-gmail,
+.footer-number {
+    margin: 5px 0;
 }
