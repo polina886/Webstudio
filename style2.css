@@ -89,10 +89,6 @@ body {
     border-radius: 8px;
 }
 
-.portfolio-banner-item:hover {
-    transform: translateY(-5px);
-}
-
 .portfolio-banner-img {
     width: 100%;
     height: auto;
