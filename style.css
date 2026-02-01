@@ -61,6 +61,10 @@ body {
     margin: 0;
 }
 
+.header-nav-link {
+    text-decoration: none;
+}
+
 .header-banner {
     background: var(--gray);
     display: flex;
@@ -120,7 +124,7 @@ body {
 }
 
 .team-role {
-color: var(--brown);
+    color: var(--brown);
 }
 
 .footer {
