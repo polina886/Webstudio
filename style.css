@@ -30,7 +30,7 @@ section {
 }
 
 .activities {
-    padding-top: 0;
+    padding:94px 0;
 }
 
 .header {
@@ -113,7 +113,12 @@ section {
     text-align: center;
     background-position: center;
     background-size: cover;
-    background-image: url('./images/img-back.webp');
+    background-color: var(--white);
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4), 
+        rgba(47, 48, 58, 0.4) 
+        ),
+    url('./images/img-back.webp');
 }
 
 .header-banner-title {
@@ -164,6 +169,11 @@ section {
 
 .icon-astronaut::before {
     background-image: url('./icons/astronaut.svg');
+}
+
+.team {
+    background-color: var(--beige);
+    padding: 94px 0;
 }
 
 .features-list,
