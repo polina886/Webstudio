@@ -15,29 +15,17 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    width: 100%;
 }
 
 .container {
-    max-width: 1200px;
-    width: 100%;
+    width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
-}
-
-section {
-   padding: 94px 0; 
-}
-
-.activities {
-    padding-top: 0;
 }
 
 .header {
     border-bottom: 1px solid #ECECEC;
     padding: 24px 0;
-    width: 100%;
-    margin: 0;
 }
 
 .header-container {
@@ -103,26 +91,34 @@ section {
 }
 
 .header-banner {
-    content: "";
-    display: block;
+    /* Максимальна ширина для великих екранів та центрування */
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* Фонове зображення з затемненням */
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4), 
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../img-back.webp'); /* перевірте назву файлу після Squoosh */
+
     background-repeat: no-repeat;
-    max-width: 1600px; 
-    width: 100%;
-    margin: 0 auto;
+    background-position: center;
+    background-size: cover; /* Це змусить фото заповнити всю секцію */
+    
     padding: 200px 0;
     text-align: center;
-    background-position: center;
-    background-size: cover;
-    background-image: url('./images/img-back.webp');
 }
 
 .header-banner-title {
-    color: var(--white);
+    color: #ffffff;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
-    max-width: 700px;
+    max-width: 696px;
     margin: 0 auto 30px;
 }
 
@@ -177,25 +173,12 @@ section {
     margin: 0;
 }
 
-.features-item {
-    background-color: var(--white);
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
+.features-item,
 .team-item {
-    background-color: var(--white);
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 0px 0px 4px 4px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
-                0px 1px 1px rgba(0, 0, 0, 0.14), 
-                0px 2px 1px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
 }
 
 .team-title,
@@ -203,27 +186,12 @@ section {
     text-align: center;
 }
 
-.team-img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
 .team-name {
-    display: block;
-    margin: 0 0 10px 0;
     color: var(--text);
     text-decoration: none;
-    font-weight: 500;
-    font-size: 16px;
-}
-
-.team-content {
-    padding: 30px 0;
 }
 
 .team-role {
-    margin: 0;
     color: var(--brown);
 }
 
@@ -233,9 +201,8 @@ section {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 40px 0;
+    padding: 20px;
     width: 100%;
-    margin: 0;
 }
 
 .footer .container {
