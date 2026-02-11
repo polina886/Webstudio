@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../../../Desktop/webstudio-pdf"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "images"
+	}
+}
