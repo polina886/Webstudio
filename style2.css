@@ -74,8 +74,7 @@ body {
     margin-left: auto;
 }
 
-.header-nav-link,
-.header-contact-link {
+.header-nav-link {
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
@@ -83,8 +82,24 @@ body {
     color: var(--text);
 }
 
+.header-contacts-list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
 .header-contact-link {
-    color: var(--brown);
+    display: flex;
+    align-items: center;
+    color: #AFB1B8;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-contact-link {
+    margin-right: 10px;
 }
 
 .portfolio-banner {
@@ -159,20 +174,28 @@ body {
     background: var(--gray);
     color: var(--white);
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 0;
+    align-items: baseline;
+    padding: 40px 0;
     margin-top: 40px;
+    width: 100%;
 }
 
-.footer-text,
-.footer-gmail,
-.footer-number {
-    margin: 5px 0;
+.footer .container {
+    display: flex;
+    align-items: baseline;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.footer-box {
+    margin-right: 70px;
 }
 
 .footer-logo {
-    margin-right: 93px;
+    display: inline-block;
+    margin-bottom: 20px;
     font-size: 26px;
     font-weight: 700;
     font-family: 'Raleway', sans-serif;
@@ -187,4 +210,45 @@ body {
 .footer-logo::after {
     content: "Studio";
     color: var(--white);
+}
+
+.footer-info {
+    color: var(--white);
+    font-size: 14px;
+    line-height: 1.71;
+    font-style: normal;
+    margin: 0;
+}
+
+.footer-title {
+    margin: 0 0 20px 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.footer-list {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: #AFB1B8;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-icon {
+    fill: #AFB1B8;
 }
