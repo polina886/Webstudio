@@ -83,6 +83,32 @@ section {
     margin: 0;
 }
 
+.header-nav-item {
+    position: relative;
+}
+
+.header-nav-item::after {
+    transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    height: 4px;
+    background-color: #2196F3;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+    width: 0;
+    display: block;
+    border-radius: 2px;
+}
+
+.header-nav-item:hover::after {
+    width: 100%;
+}
+
+.header-nav-link:hover,
+.header-nav-link:focus {
+    color: #2196F3;
+}
+
 .header-contacts-list {
     display: flex;
     gap: 50px;
