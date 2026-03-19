@@ -702,8 +702,71 @@ section {
 
 .link:hover,
 .link:focus {
-  background-color: #2196F3;
-  color: #FFFFFF
+    background-color: #2196F3;
+    color: #FFFFFF
+}
+
+
+.footer-mailing-list {
+    display: flex;
+    flex-direction: column;
+    margin-left: 90px;
+    gap: 20px;
+}
+
+.footer-input-wrap {
+    display: flex;
+    gap: 12px;
+}
+
+.footer-form-input {
+    border-radius: 4px;
+    color: #ffffff;
+    width: 358px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    outline: none;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-label {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.14;
+}
+
+.footer-form-input:focus {
+    border-color: #2196f3;
+}
+
+.footer-submit {
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    min-width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    background-color: #2196f3;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    justify-content: center;
+    font-weight: 700;
+    gap: 10px;
+    border: none;
+}
+
+.footer-input-wrap button:hover,
+.footer-input-wrap button:focus {
+    background-color: #188ce8;
+}
+
+.input-icon {
+    fill: #fff;
 }
 
 .social-icon {
