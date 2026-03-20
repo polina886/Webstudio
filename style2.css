@@ -247,6 +247,16 @@ main {
     text-align: center;
 }
 
+.portfolio-banner-button:hover,
+.portfolio-banner-button:focus {
+    background-color: var(--blue);
+    color: #FFFFFF;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+                0px 4px 4px rgba(0, 0, 0, 0.06), 
+                1px 4px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+}
+
 .footer {
     background: var(--gray);
     color: var(--white);
@@ -387,10 +397,10 @@ main {
 
 .footer-input-wrap button:hover,
 .footer-input-wrap button:focus {
-    background-color: #188ce8;
+    background-color: var(--blue);
 }
 
-.input-icon {
+.footer-input-icon {
     fill: #fff;
 }
 
